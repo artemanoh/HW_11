@@ -1,66 +1,66 @@
-// // Task 1
-// const bankAccount = {
-//     ownerName: "Valeria",
-//     accountNumber: 6642,
-//     balance: 6564543,
+// Task 1
+const bankAccount = {
+    ownerName: "Valeria",
+    accountNumber: 6642,
+    balance: 6564543,
 
-//   deposit(amount) {
-//     this.balance += amount;
-//   },
+  deposit(amount) {
+    this.balance += amount;
+  },
 
-//   withdraw(amount) {
-//     this.balance -= amount;
-//   },
-// };
+  withdraw(amount) {
+    this.balance -= amount;
+  },
+};
 
-// let continueTransaction;
-// do {
-//   const userChoice = confirm(
-//     "Натисніть 'ОК', щоб поповнити рахунок, або 'Скасувати', щоб зняти кошти з рахунку."
-//   );
+let continueTransaction;
+do {
+  const userChoice = confirm(
+    "Натисніть 'ОК', щоб поповнити рахунок, або 'Скасувати', щоб зняти кошти з рахунку."
+  );
 
-//   if (userChoice === true) {
-//     const depositAmount = Number(
-//       prompt("ВВедіть суму, на яку ви хочете поповнити рахунок")
-//     );
-//     bankAccount.deposit(depositAmount);
-//   } else {
-//     const withdrawAmount = Number(
-//       prompt("Введіть суму, яку хочете зняти з рахунку")
-//     );
-//     bankAccount.withdraw(withdrawAmount);
-//   }
+  if (userChoice === true) {
+    const depositAmount = Number(
+      prompt("ВВедіть суму, на яку ви хочете поповнити рахунок")
+    );
+    bankAccount.deposit(depositAmount);
+  } else {
+    const withdrawAmount = Number(
+      prompt("Введіть суму, яку хочете зняти з рахунку")
+    );
+    bankAccount.withdraw(withdrawAmount);
+  }
 
-//   continueTransaction = confirm(
-//     "Може ви ще щось хочете зробити?"
-//   );
-// } while (continueTransaction === true);
+  continueTransaction = confirm(
+    "Може ви ще щось хочете зробити?"
+  );
+} while (continueTransaction === true);
 
-// console.log(bankAccount.balance);
-// // Task 2
+console.log(bankAccount.balance);
+// Task 2
 
-// let message;
+let message;
 
-// const weather = {
-//   temperature: 7,
-//   humidity: 30,
-//   windSpeed: 5,
+const weather = {
+  temperature: 7,
+  humidity: 30,
+  windSpeed: 5,
 
-//   checkTemperature(inputTemperature) {
-//     if (inputTemperature < 0) {
-//       message = "Температура нижче 0 градусів";
-//     } else {
-//       message = "Температура вище або дорівнює 0 градусів";
-//     }
-//     return message;
-//   },
-// };
-// let continueChangingTemperature;
-// do {
-//   const inputTemperature = Number(prompt("Введіть будь яку температуру"));
-//   alert(weather.checkTemperature(inputTemperature));
-//   continueChangingTemperature = confirm("Можливо ви хочете змінити темперетуру");
-// } while (continueChangingTemperature === true);
+  checkTemperature(inputTemperature) {
+    if (inputTemperature < 0) {
+      message = "Температура нижче 0 градусів";
+    } else {
+      message = "Температура вище або дорівнює 0 градусів";
+    }
+    return message;
+  },
+};
+let continueChangingTemperature;
+do {
+  const inputTemperature = Number(prompt("Введіть будь яку температуру"));
+  alert(weather.checkTemperature(inputTemperature));
+  continueChangingTemperature = confirm("Можливо ви хочете змінити темперетуру");
+} while (continueChangingTemperature === true);
 // Task 3
 
 const user = {
